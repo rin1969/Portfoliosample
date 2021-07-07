@@ -2,19 +2,18 @@
 *画面のスタイルシート
 */
 
-body{
+body {
     font-family: "Noto Sans JP","sans-serif";
     margin: 0;
     min-width: 1076px;
 }
 
-.color-green{
+.color-green {
     color: #00abae;
 }
 
-.sub-title{
+.sub-title {
     font-size: 32px;
-    text-align: center;
 }
 
 
@@ -22,13 +21,13 @@ body{
 *[headerタグ]のスタイルシート
 */
 
-.block-header{
+.block-header {
     margin: 10px 0;
     padding: 0 20px 10px;
     box-shadow: 0 10px 10px -5px rgba(204,204,204,0.3);
 }
 
-.block-header a{
+.block-header a {
     font-size: 40px;
     color: #000;
     text-decoration: none;
@@ -39,7 +38,7 @@ body{
 *[main]のスタイルシート
 */
 
-.block-main{
+.block-main {
     text-align: center;
     margin: 100px 0;
 }
@@ -48,26 +47,26 @@ body{
 *[profile]のスタイルシート
 */
 
-.item-list{
+.item-list {
     width: 100%;
     max-width: 348px;
     margin: 0 auto;
 }
 
-.item-list b{
+.item-list b {
     display: block;
     font-size: 24px;
     font-weight: normal;
     margin: 20px 0 30px;
 }
 
-.item-list p{
+.item-list p {
     font-size: 15px;
     line-height: normal;
     text-align: left;
 }
 
-.icon-list{
+.icon-list {
     list-style: none;
     width: 100%;
     max-width: 247px;
@@ -78,22 +77,23 @@ body{
     align-items: center;
 }
 
-.icon-list li{
+.icon-list li {
     margin-right: 22px;
 }
 
-.icon-list li:last-child{
+.icon-list li:last-child {
     margin-right: 0;
 }
+
 /* 
 *[works]のスタイルシート
  */
 
-.box-works{
+.box-works {
     margin: 80px 0 0;
 }
 
-.works-list{
+.works-list {
     list-style: none;
     width: 100%;
     max-width: 1076px;
@@ -103,7 +103,7 @@ body{
     overflow: hidden;
 }
 
-.works-list li{
+.works-list li {
     display: block;
     width: 100%;
     max-width: 348px;
@@ -111,32 +111,32 @@ body{
     margin-right: 15px;
 }
 
-.works-list li:last-child{
+.works-list li:last-child {
     margin-right: 0;
 }
 
-.works-list li img{
+.works-list li img {
     width: 100%;
     border: 1px solid#ccc;
 }
 
-.works-list li h3{
+.works-list li h3 {
     font-size: 24px;
     margin: 10px 0;
 }
 
-.works-list li span{
+.works-list li span {
     font-size: 18px;
 }
 
-.works-list li .link{
+.works-list li .link {
     display: flex;
     justify-content: left;
     align-items: left;
     margin-top: 15px;
 }
 
-.works-list li .link a{
+.works-list li .link a {
     background-color: rgb(226,226,226);
     padding: 5px 20px;
     margin-right: 10px;
@@ -149,9 +149,99 @@ body{
 *[footer]のスタイルシート
 */
 
-.block-footer p{
+.block-footer p {
     clear: both;
     text-align: center;
     font-size: 15px;
     margin: 50px 0 20px;
+}
+
+
+/* 
+*タブレット用のスタイルシート
+*/
+/* @media screen and (max-width:767px) {
+    .sub-title {
+        color: red;
+    }
+} */
+
+/* 
+*スマホ用のスタイルシート
+*/
+
+@media screen and (max-width:767px) {
+    body {
+        min-width: 100%;
+    }
+
+    /* 
+    *[header]のスタイルシート
+    */
+
+    .block-header {
+        padding: 0 10px 10px;
+        box-shadow: 0 8px 8px -5px rgba(204,204,204,0.3);
+    }
+
+    .block-header a {
+        font-size: 31px
+    }
+
+    /* 
+    *[main]のスタイルシート
+    */
+
+    .block-main {
+        margin: 50px 0;
+    }
+
+    /* 
+    *[profile]のスタイルシート
+    */
+
+    .box-profile {
+        padding: 0 10px;
+    }
+
+    .item-list {
+        max-width: 100%;
+    }
+
+    .item-list b {
+        font-size: 18px;
+    }
+    .icon-list {
+        max-width: 100%;
+    }
+    .icon-list i {
+        margin-right: 25px;
+    }
+
+    /* 
+    *[works]のスタイルシート
+    */
+
+    .box-works {
+        margin: 60px 0 0;
+        padding: 0 10px;
+    }
+    .works-list {
+        max-width: 100%;
+    }
+    .works-list li {
+        max-width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .works-list h3 {
+        font-size: 20px;
+        margin: 5px 0;
+    }
+
+    .works-list span {
+        font-size: 14px;
+    }
 }
